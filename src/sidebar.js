@@ -307,7 +307,7 @@ class Sidebar extends Component {
         sidebarStyle.right = 0
         sidebarStyle.left = 0
         sidebarStyle.bottom = 0
-        sidebarStyle.top = window.innerHeight - this.state.sidebarHeight
+        sidebarStyle.height = window.innerHeight
         sidebarStyle.transform = 'translateY(100%)'
         sidebarStyle.WebkitTransform = 'translateY(100%)'
         if (hasBoxShadow) {
@@ -317,10 +317,10 @@ class Sidebar extends Component {
       case Sidebar.pullPositionTypes.top:
         sidebarStyle.right = 0
         sidebarStyle.left = 0
-        sidebarStyle.bottom = window.innerHeight - this.state.sidebarHeight
+        sidebarStyle.height = window.innerHeight
         sidebarStyle.top = 0
         sidebarStyle.transform = 'translateY(0%)'
-        sidebarStyle.WebkitTransform = 'translateY(-100%)'
+        sidebarStyle.WebkitTransform = 'translateY(0%)'
         if (hasBoxShadow) {
           sidebarStyle.boxShadow = '2px 2px 4px rgba(0, 0, 0, 0.15)'
         }
